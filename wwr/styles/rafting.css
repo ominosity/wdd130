@@ -1,0 +1,78 @@
+:root {
+    --primary-color: rgb(33, 52, 84); 
+    --secondary-color: rgb(145, 177, 198);
+    --primary-color-semitransparent: rgb(33, 52, 84, .8);
+    --accent1-color: rgb(185, 102, 11);
+    --accent2-color: rgb(26, 111, 179);
+}
+
+body {
+    max-width: 1024px;
+}
+
+h1, h2 {
+    font-family: "Noto Sans Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 62.5;
+}
+
+h1 {
+    font-size: 48px;
+    color: var(--accent2-color);
+    position: absolute; 
+    top: 50px;
+    width: 90%;
+    margin-left: 5%;
+    padding: 5px 0;
+    background-color: rgb(255, 255, 255, .9);
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    color: var(--accent1-color);
+}
+
+p {
+    color: var(--primary-color);
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.hero {
+    width: 100%;
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article {
+    position: absolute;
+    top: 100px;
+    width: 70%;
+    background-color: var(--primary-color-semitransparent);
+    margin-top: 100px;
+    margin-left: 15%;
+    padding: 15px;
+}
+
+.hero article img {
+    width: 125px;
+    float: right;
+    margin-left: 20px;
+}
+
+.hero article p {
+    color: white;
+}

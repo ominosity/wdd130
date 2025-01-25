@@ -1,7 +1,7 @@
 :root {
     --primary-color: rgb(33, 52, 84); 
-    --secondary-color: rgb(145, 177, 198);
     --primary-color-semitransparent: rgb(33, 52, 84, .8);
+    --secondary-color: rgb(145, 177, 198);
     --accent1-color: rgb(185, 102, 11);
     --accent2-color: rgb(26, 111, 179);
 }

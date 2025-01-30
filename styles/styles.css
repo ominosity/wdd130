@@ -2,6 +2,7 @@
     --small-margin-or-padding: 2px;
     --medium-margin-or-padding: 10px;
     --large-margin-or-padding: 20px;
+    --primary-color: darkblue;
 }
 
 * {
@@ -10,18 +11,44 @@
     box-sizing: border-box;
 }
 
-nav {
-    background-color: darkblue;
-    padding: var(--medium-margin-or-padding);
+header,
+footer,
+.grid {
+    max-width: 840px;
+    margin: 0 auto;
 }
+
+nav {
+    background-color: var(--primary-color);
+    padding: var(--medium-margin-or-padding);
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
 nav a {
     color: white;
     display: block;
-    padding: var(--large-margin-or-padding);
+    padding: var(--medium-margin-or-padding); 
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
+    padding: var(--medium-margin-or-padding);
+    margin-bottom: var(--medium-margin-or-padding);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+
+p {
+    padding: var(--medium-margin-or-padding);
+}
+
+main {
+    max-width: 840px;
+    order: 1;
 }
 
 main img {
@@ -29,22 +56,21 @@ main img {
     height: auto;
     border: 1px solid black;
     padding: var(--small-margin-or-padding);
+    margin: var(--medium-margin-or-padding);
     box-shadow: 0 0 30px gray;
     float: right;
 }
 
-p {
-    padding: 0;
-}
-
-main {
-    max-width: 840px;
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 aside {
-    width: 400px;
+    /* width: 400px; */ 
     margin: 10px;
     position: relative;
+    order: -1;
 }
 
 aside h2 {

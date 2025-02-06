@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | Richard Burgener | HTML Form - User Poll</title>
+    <meta name="author" content="Richard Burgener">
+    <meta name="description" content="Fun with forms!">
+    <link rel="stylesheet" href="./styles/poll-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Liter&family=Raleway:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | Richard Burgener | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <div class="form-item column2">
+                    <label for="fullname">Full name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="brave">Brave</option>
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                    </select>
+                </div>
+
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+
+                <div class="form-item column1">
+                <label for="feedback">List the places you have lived.</label>
+                <textarea id="feedback" name="feedback" placeholder="Utah, Oregon, Japan" rows="10"></textarea>
+                </div>
+
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2025 | HTML Form - User Poll Activity | Richard Burgener</p>
+    </footer>
+</body>
+
+</html>

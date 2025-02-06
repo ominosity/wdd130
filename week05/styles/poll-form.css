@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #25283d;
+    --secondary-color: #d7d7ff;
+    --accent-color: #8f3985;
+    --accent2-color: #9c0d38;
+    --header-font: "Raleway", sans-serif;
+    --regular-font: "Lieter", sans-serif;
+    --max-width: 1024px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--regular-font);
+    font-weight: 400;
+    font-style: normal;
+    max-width: var(--max-width);
+    margin: 15px auto;
+    background: rgb(235 235 235);
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--header-font);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.7rem;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+form {
+    width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 2px solid silver;
+    border-radius: 15px;
+    background-color: rgb(215 215 255);
+    display: grid;
+    grid-gap: 10px;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 5px;
+    
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+}
+
+legend {
+    color: var(--primary-color);
+    font-family: var(--header-font);
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 0 5px;
+}
+
+input, 
+textarea,
+select {
+    font: inherit;
+    padding: 5px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+input:focus, 
+textarea:focus,
+select:focus,
+input[type="checkbox"]:focus {
+    background-color: #ddd;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
+}
+
+label {
+    text-align: right;
+    padding-right: .5rem;
+    font-size: 1.1rem;
+}
+
+button {
+    font-size: 1.5rem;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 3px outset var(--primary-color);
+    padding: 5px;
+}
+
+button:hover {
+    color: #fff;
+    background-color: var(--accent-color);
+}
+
+footer {
+    max-width: var(--max-width);
+    color: #555;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Class property assignments */
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 10px 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+#feedback {
+    grid-column: 1 / 3;
+}

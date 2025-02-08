@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact RAPIDS Whitewater Rafting Company</title>
+    <meta name="author" content="Richard Burgener">
+    <meta name="description" content="The contact page for a fictional company called 'RAPIDS'">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wdth,wght@62.5,700&family=Noto+Sans+Display:wght@400&family=Poppins:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link href="styles/rafting.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/rapids-logo.webp" width="150" alt="Rapids company logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section id="contact-info">
+            <h1>Whitewater RAPIDS Information</h1>
+            <div>
+                <article>
+                    <div class="icon-container">
+                        <img src="images/home-icon.svg" width="32">
+                    </div>
+                    <div class="content">
+                        Address:<br>
+                        <span class="accent">123 Yemen Rd</span>
+                    </div>
+                </article>
+                <article>
+                    <div class="icon-container">
+                        <img src="images/mail-icon.svg" width="32">
+                    </div>
+                    <div class="content">
+                        Email:<br>
+                        <span class="accent"><a
+                                href="mailto:contact@whitewaterrapids.com">@whitewaterrapids.com</a></span>
+                    </div>
+                </article>
+                <article>
+                    <div class="icon-container">
+                        <img src="images/phone-icon.svg" width="32">
+                    </div>
+                    <div class="content">
+                        Phone:<br>
+                        <span class="accent">(800) 459-8376 ext 801</span>
+                    </div>
+                </article>
+            </div>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.59988542896!2d-97.4440236235472!3d30.58883859257107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644ddffa1faf36b%3A0x3f865ebaf65dc74a!2s123%20Yemen%20Rd%2C%20Taylor%2C%20TX%2076574!5e0!3m2!1sen!2sus!4v1739041459408!5m2!1sen!2sus"
+                    width="269" height="269" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section id="employee-profiles">
+            <h2>Our Team</h2>
+            <figure>
+                <img src="images/manik-mandal.webp" width="154">
+                <figcaption><span class="accent"> Mandal</span><br>Content Creator</figcaption>
+            </figure>
+            <figure>
+                <img src="images/jeffeson-deshommes.webp" width="212">
+                <figcaption><span class="accent">Jeffeson Deshommes</span><br>River Master</figcaption>
+            </figure>
+            <figure>
+                <img src="images/pavel-danilyuk.webp" width="195">
+                <figcaption><span class="accent">Pavel Danilyuk</span><br>Equipment Manager</figcaption>
+            </figure>
+        </section>
+        <section id="contact-us-form-container">
+            <form>
+                <h2>Contact Us</h2>
+
+                <div class="form-item">
+                    <label for="name">Your Name</label>
+                    <input type="text" placeholder="Your name" id="name" name="name">
+                </div>
+
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Your email address" id="email" name="email">
+                </div>
+
+                <div class="form-item">
+                    <fieldset>
+                        <legend>Contact reason</legend>
+
+                        <div>
+                            <input type="radio" id="general" name="reason" value="general">
+                            <label for="general">General Inquiry</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="reservation" name="reason" value="reservation">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="website" name="reason" value="website">
+                            <label for="website">Website Suggestion</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-item">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
+                </div>
+
+                <div class="form-item">
+                    <div>
+                        <input type="checkbox" id="subscribe">
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 | RAPIDS | Richard Burgener</p>
+        <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook logo"
+                width="30"></a>
+        <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram logo"
+                width="30"></a>
+        <a href="https://reddit.com"><img src="images/reddit.svg" alt="Reddit logo" width="30"></a>
+        <a href="https://app.moqups.com/MLqJR8Y4n9JCvK6lZ9DwoLUHhgKwhhYh/view/page/a53101dc4" target="_blank">Contact Us
+            Wireframe<img src="images/link-icon.svg" alt="Link to wireframe" width="30"></a>
+    </footer>
+</body>
+
+</html>

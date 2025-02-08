@@ -1,30 +1,51 @@
+/* Variable declarations */
 :root {
-    --primary-color: rgb(33, 52, 84); 
+    --primary-color: #213454; 
     --primary-color-semitransparent: rgb(33, 52, 84, .8);
-    --secondary-color: rgb(145, 177, 198);
-    --accent1-color: rgb(185, 102, 11);
-    --accent2-color: rgb(26, 111, 179);
+    --secondary-color: #91b1c6;
+    --accent1-color: #b9660b;
+    --accent2-color: #1a6fb3;
     --max-screen-width: 1024px;
+    --header-font-family: "Noto Sans Display", serif;
+    --header-font-weight: 700;
+    --body-font-family: "Poppins", serif;
+    --body-font-weight: 400;
 }
 
+/* Resets */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+input,
+textarea,
+button,
+select {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
 body {
     margin: 0 auto; 
     max-width: var(--max-screen-width);
-    background-color: rgb(240, 240, 240);
-    font-family: "Poppins", serif;
-    font-weight: 400;
+    background-color: #f0f0f0;
+    font-family: var(--body-font-family);
+    font-weight: var(--body-font-weight);
     font-style: normal; 
 }
 
-h1, h2 {
-    font-family: "Noto Sans Display", serif;
-    font-weight: 700;
+h1, 
+h2 {
+    font-family: var(--header-font-family);
+    font-weight: var(--header-font-weight);
     font-style: normal;
     font-variation-settings: "wdth" 62.5;
 }
@@ -32,13 +53,12 @@ h1, h2 {
 h1 {
     font-size: 48px;
     color: var(--accent2-color);
-    position: absolute; 
-    top: 50px;
-    width: 90%;
     margin-left: 5%;
-    padding: 5px 0;
-    background-color: rgb(255, 255, 255, .9);
     text-align: center;
+    border: 1px solid #ebebeb;
+    border-radius: 1rem;
+    width: 90%;
+    background-color: #fafafa;
 }
 
 h2 {
@@ -83,8 +103,8 @@ nav a {
     padding: 5px 40px; 
     text-decoration: none;
     font-size: 1.1rem;
-    font-family: "Noto Sans Display", serif;
-    font-weight: 700;
+    font-family: var(--header-font-family);
+    font-weight: var(--header-font-weight);
     font-style: normal;
 }
 
@@ -117,9 +137,72 @@ section img {
     padding: 1px;    
 }
 
+iframe {
+    border: none; 
+    border-radius: 13px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
 figcaption {
+    grid-column: 1;
     text-align: center;
     font-size: .8rem;
+}
+
+form {
+    width: 700px;
+    background-color: #fafafa;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 13px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+}
+
+input:focus,
+textarea:focus {
+    background-color: #ebe9e9;
+}
+
+fieldset {
+    display: grid;
+    border: none;
+}
+
+fieldset div {
+    margin-left: 10px;
+}
+
+label, 
+legend {
+    font-size: .9rem;
+}
+
+button[type="submit"] {
+    grid-column: 1;
+    width: 200px;
+    font-family: var(--header-font-family);
+    font-weight: var(--header-font-weight);
+    font-size: 1.4rem;
+    margin: 15px auto;
+    padding: 15px;
+    border: 2px outset var(--primary-color);
+    border-radius: 1rem;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+button[type="submit"]:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+button[type="submit"]:active {
+    border: 3px inset var(--primary-color);
 }
 
 footer {
@@ -152,6 +235,12 @@ footer a:nth-of-type(3) {
     grid-area: 1 / 4 / 1 / 5;
 }
 
+/* Bonus left-side link */
+footer a:nth-of-type(4) {
+    grid-area: 1 / 1 / 2 / 2;
+    color: #fff;
+}
+
 footer p {
     color: white;
     grid-area: 1 / 1 / 1 / 5 ;
@@ -162,6 +251,13 @@ footer p {
 .hero {
     width: 100%;
     position: relative;
+}
+
+.hero h1 {
+    position: absolute; 
+    top: 50px;
+    padding: 5px 0;
+    background-color: rgb(255, 255, 255, .9);
 }
 
 .hero img {
@@ -189,3 +285,68 @@ footer p {
 .hero article p {
     color: white;
 }
+
+/* Contact page styles */
+#contact-info h1 {
+    grid-column: 1 / 5;
+}
+
+#contact-info div:first-of-type {
+    grid-column: 1 / 4;
+}
+
+#contact-info div:last-of-type {
+    grid-column: 4 / 5;
+}
+
+#contact-info article {
+    border: 1px solid #ebebeb;
+    border-radius: 1rem;
+    background-color: #fafafa;
+    justify-content: left;
+    min-width: 500px;
+    margin: 5px 0 5px 20px;
+    display: grid;
+    padding: 10px;
+}
+
+#employee-profiles {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+}
+
+.icon-container {
+    width: 58px;
+    height: 48px;
+    background-color: #f0f0f0 ;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+}
+
+.icon-container img {
+    border: none;
+}
+
+.content {
+    margin-left: 20px;
+    color: var(--primary-color);
+}
+
+.accent {
+    font-family: var(--header-font-family);
+    font-weight: var(--header-font-weight);
+}
+
+.accent a {
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.form-item {
+    grid-column: 1;
+    display: grid;
+    margin: 5px 20px;
+}
+
+

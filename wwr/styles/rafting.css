@@ -429,10 +429,6 @@ a.cta {
     margin: 5px 20px;
 }
 
-.hero svg {
-    stroke: var(--accent1-color);
-}
-
 #trips article {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
